@@ -7,12 +7,13 @@ def count_odd_even_numbers(num):
     even_num = []
     st = str(num)
     stl = list(st)
-    for i in stl:
+    for i in stl:        # time complexity is o(n)
         if int(i) % 2 == 0:
             even_num.append(i)
         else:
             odd_num.append(i)
     print(f'There are {len(odd_num)}, {odd_num} odd numbers and {len(even_num)}, {even_num} even numbers')
+
 
 num = int(input("number is : "))
 count_odd_even_numbers(num)
